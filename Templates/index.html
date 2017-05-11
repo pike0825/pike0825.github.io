@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>website project</title>
+<link href="web_project_styles.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+<!----head---->
+
+
+
+<!-- body --------------------------------------------------------------------------------->
+
+<div id="body">
+<body onLoad="MM_preloadImages('../pic3.jpg')">
+
+<!--header-->
+<div id="header">
+<header>
+  
+  <!---image-->
+  <div class="image">
+	<img src="../pic2.jpg" id="pic1" onMouseOver="MM_swapImage('pic1','','../pic3.jpg',1)" onMouseOut="MM_swapImgRestore()"  >
+	</div>
+	
+<!----nav-->
+	<div class="nav">
+	<nav>
+	  <ul>
+			<li><a href="index.html">home</a></li>
+			<li><a href="about_me.html">about me</a></li>
+			<li><a href="services.html">services</a></li>
+		<li><a href="contact_me.html">contact me</a></li>
+		  
+	  </ul>
+	</nav>
+	</div>
+	
+<!--info-->
+	<div class="info">
+    
+  <p>
+  
+  <ul>
+	    <li>
+	      <h1> <u style="font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', serif">Miguel Rivera</u>&nbsp;</h1>
+	    </li>
+			  <li style="font-style: normal; font-weight: bold;">
+			   Broker
+	    </li>
+			  <li>
+		      <span style="font-weight: bold">Phone number:</span> (630)-856-9681 </li>
+			  <li>
+		      <span style="font-weight: bold">Email Address:</span> miguelrivera@c21affiliated.com </li>
+			  <li>
+			  <span style="font-weight: bold">Languages Spoken: </span>English, Spanish. </li>
+  </ul>
+</p>
+</div>
+</header>
+</div>
+<!-----end_header-->
+
+<!-- section (editable)-->
+<div id="section">
+<section>
+  <h1>Welcome!</h1>
+  
+    <p class="content">Searching for your next home?  Try our state-of-the-art map search –   with it you can quickly search the entire market.  Simply type the   address, city, MLS ID, or just hit the search button to get started.    The large format map allows you to click and drag, zoom in and view   detailed information and photos for all properties currently listed on   the MLS.</p>
+    <p class="content">Selling your home?  No other website in the market will   showcase your listing with up to 50 high resolution photos!  In addition   to advertising your property on my own website, I share your   listing to other real estate websites across the web as well as social media.</p>
+    <p class="content">Whether you   are selling your home, searching for your next home, or have any   questions about the process – I look forward to helping you!</p>
+</section>
+</div>
+
+<!-- aside (editable)-->
+<div id="aside">
+<aside>
+  <h1>work with me</h1>
+<p class="video">
+  <iframe width="300" height="315" src="https://www.youtube.com/embed/wpoL8R56bTQ" frameborder="0" allowfullscreen></iframe>
+ </p>
+    <p>&nbsp;</p>
+  
+</aside>
+</div>
+
+<!-- footer -->
+
+<div class="footer">
+<footer class="footer" style="font-style: italic; font-weight: bold;">Century21 Affiliated &bull; 1999 W. Galena Blvd. Suite A. Aurora, IL 60506 &bull; (630) 897-4114
+</footer>
+</div>
+</body>
+</div>
+
+</html>

@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>website project</title>
+<link href="web_project_styles.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('../pic3.jpg')">
+
+<!-- head -->
+<header>
+	<img src="../pic2.jpg" id="Image1" onMouseOver="MM_swapImage('Image1','','../pic3.jpg',1)" onMouseOut="MM_swapImgRestore()"  >
+	<nav>
+		<ul>
+			<li><a href="index.html">home</a></li>
+			<li><a href="about_me.html">about me</a></li>
+			<li><a href="services.html">services</a></li>
+			<li><a href="contact_me.html">contact me</a></li>
+		</ul>
+	</nav>
+	
+		<div class="info">
+  <p>
+		  <ul>
+			  <li>
+			    <h1>
+			      <u>Miguel Rivera</u> </h1>
+			  </li>
+			  <li style="font-style: normal; font-weight: bold;">
+			   Broker
+		    </li>
+			  <li> <strong>Phone number:</strong> (630)-856-9681 </li>
+		    <li>
+		      <span style="font-weight: bold">Email Address:</span> miguelrivera@c21affiliated.com </li>
+			  <li>
+			  <span style="font-weight: bold">Languages Spoken: </span>English, Spanish. </li>
+  </ul>
+</p>
+</div>
+
+</header>
+
+<!-- section (editable)-->
+<section>
+  <h1>Contact me</h1>
+  <div id="agent-more-contact">
+    <p class="content">No matter what area in Illinois you are looking to conduct business  in that I cant help, I can refer you to other great agents around your area. Below are my office hours, you are more than welcome to come in with any questions or concerns regarding real estate and I will do my best to help you or refer you to others that can. </p>
+  </div>
+<div class ="table">
+<h2>Office Hours</h2>
+<table width="75%" border="2" align="center">
+  <tbody>
+    <tr>
+      <th scope="col">Sunday</th>
+      <th scope="col">Monday</th>
+      <th scope="col">Tuesday</th>
+      <th scope="col">Wednesday</th>
+      <th scope="col">Thursday</th>
+      <th scope="col">Friday</th>
+      <th scope="col">Saturday</th>
+    </tr>
+    <tr>
+      <td>Closed</td>
+      <td>9am-6pm</td>
+      <td>9am-6pm</td>
+      <td>9am-6pm</td>
+      <td>9am-6pm</td>
+      <td>9am-5pm</td>
+      <td>9am-3pm</td>
+    </tr>
+  </tbody>
+</table>
+<p class="contentfooter">call/text or email me when I'm not in my office.</p>
+</div>
+</section>
+
+<!-- aside (editable)-->
+<aside>
+  <h1>work with me</h1>
+  <p style="font-weight: bold; font-size: 18px; text-decoration: underline;"> Let me be your personal agent. </p>
+  <form>
+    <p>
+      <textarea rows="7" placeholder="messege">
+  	
+  </textarea>
+    </p>
+    <p><br>
+      
+      <input type="text" placeholder="first name">
+    </p>
+    <p>
+      <input type="text" placeholder="last name">
+    </p>
+    <p>
+      <input type="email" placeholder="e-mail address">
+    </p>
+    <p>
+      <input type="tel" placeholder="phone number">
+    </p>
+  </form>
+   <input name="send" type="button" id="send" value="send">
+</aside>
+
+<!-- footer -->
+<footer class="footer">Century21 Affiliated &bull; 1999 W. Galena Blvd. Suite A. Aurora, IL 60506 &bull; (630) 897-4214
+</footer>
+
+</body>
+</html>
